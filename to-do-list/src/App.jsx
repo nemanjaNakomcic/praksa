@@ -6,7 +6,8 @@ import { loadTasks, saveTasks } from './utils/localStorage';
 import TodoForm from './components/TodoForm/TodoForm';
 
 function App() {
-  const [todoList, setToDoList] = useState([]);
+  const [todoList, setToDoList] = useState(() => loadTasks());
+
 
   const idRef = useRef(1);
 
