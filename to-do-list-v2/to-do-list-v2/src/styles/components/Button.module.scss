@@ -1,0 +1,40 @@
+@use "../variables.scss" as *;
+
+.button {
+  padding: 0.5rem 1rem;
+  font-size: $font-base;
+  border: none;
+  border-radius: $radius-sm;
+  cursor: pointer;
+  transition: background-color $transition-fast, opacity $transition-fast;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.primary {
+  background-color: $color-primary;
+  color: #fff;
+
+  &:hover {
+    background-color: $color-primary-hover;
+  }
+}
+
+.success {
+  background-color: $color-success;
+  color: #fff;
+
+  &:hover {
+    background-color: $color-success-hover;
+  }
+}
+
+.danger {
+  background-color: $color-danger;
+  color: #fff;
+
+  &:hover {
+    background-color: $color-danger-hover;
+  }
+}

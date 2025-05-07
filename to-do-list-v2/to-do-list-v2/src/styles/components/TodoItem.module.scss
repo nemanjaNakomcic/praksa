@@ -1,0 +1,12 @@
+.row {
+  &:hover {
+    background-color: #f2f2f2;
+  }
+}
+
+.title {
+  &.completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+}
