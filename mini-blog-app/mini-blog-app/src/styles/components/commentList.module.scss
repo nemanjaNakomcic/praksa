@@ -1,0 +1,37 @@
+@import "../variables";
+
+.comments {
+  margin-top: $spacing-lg;
+
+  h3 {
+    font-size: $font-md;
+    margin-bottom: $spacing-sm;
+    color: $color-text;
+  }
+
+  .comment {
+    padding: $spacing-md;
+    margin-bottom: $spacing-sm;
+    background-color: $color-bg;
+    border: 1px solid $color-border;
+    border-radius: $border-radius;
+
+    strong {
+      display: block;
+      margin-bottom: $spacing-sm / 2;
+      color: $color-text;
+    }
+
+    span {
+      font-size: $font-sm;
+      color: $color-muted;
+    }
+
+    p {
+      font-size: $font-sm;
+      line-height: 1.4;
+      margin-top: $spacing-sm / 2;
+      color: $color-text;
+    }
+  }
+}

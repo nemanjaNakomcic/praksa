@@ -1,0 +1,12 @@
+@import "@/styles/variables";
+
+.navbar {
+  position: fixed;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: $spacing-sm;
+  background-color: $color-bg;
+  border-bottom: 1px solid $color-border;
+}
