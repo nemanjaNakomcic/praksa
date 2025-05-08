@@ -17,6 +17,7 @@ export default function Search({ fallbackPosts, initialPage }) {
   useEffect(() => {
     if (!searchTerm) {
       getPosts(postsPerPage, currentPage).then(setServerPosts);
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   }, [searchTerm, currentPage]);
 
