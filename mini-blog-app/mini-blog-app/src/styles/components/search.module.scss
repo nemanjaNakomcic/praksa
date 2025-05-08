@@ -1,0 +1,23 @@
+@import "@/styles/variables";
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  margin: $spacing-md 0;
+}
+
+.searchInput {
+  width: 100%;
+  max-width: 400px;
+  padding: $spacing-sm $spacing-md;
+  font-size: $font-md;
+  border: 1px solid $color-border;
+  border-radius: $border-radius;
+  background-color: $color-bg;
+  color: $color-text;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px $color-hover-shadow;
+  }
+}

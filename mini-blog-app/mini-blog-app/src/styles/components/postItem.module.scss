@@ -1,0 +1,48 @@
+@import "@/styles/variables";
+
+.postItem {
+  padding: $spacing-md;
+  margin: $spacing-md;
+  border: 1px solid $color-border;
+  border-radius: $border-radius;
+  background-color: $color-bg;
+  transition: box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 2px 8px $color-hover-shadow;
+  }
+
+  h2 {
+    font-size: $font-md;
+    margin-bottom: $spacing-sm;
+
+    a {
+      color: $color-text;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  p {
+    font-size: $font-sm;
+    color: $color-muted;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+  .postItem {
+    padding: $spacing-lg;
+
+    h2 {
+      font-size: $font-lg;
+    }
+
+    p {
+      font-size: 1rem; // možeš i dodati $font-base ako želiš
+    }
+  }
+}

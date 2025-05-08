@@ -1,0 +1,46 @@
+@import "../variables";
+
+.postPage {
+  padding: $spacing-md;
+
+  h1 {
+    font-size: $font-lg;
+    margin-bottom: $spacing-sm;
+    color: $color-text;
+  }
+
+  p {
+    font-size: $font-sm;
+    line-height: 1.6;
+    color: $color-muted;
+    margin-bottom: $spacing-sm;
+  }
+
+  .authorInfo {
+    font-size: $font-sm;
+    margin-top: $spacing-md;
+
+    a {
+      color: $color-text;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+  .postPage {
+    padding: $spacing-lg;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: $font-md;
+    }
+  }
+}

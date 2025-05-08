@@ -1,0 +1,29 @@
+@use "@/styles/variables" as *;
+
+.pagination {
+  text-align: center;
+  padding: $spacing-lg 0;
+  width: 100%;
+
+  a,
+  button {
+    margin: 0 $spacing-lg;
+    text-decoration: none;
+    color: $color-text;
+    font-size: $font-sm;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  span {
+    margin: 0 $spacing-sm;
+    font-weight: bold;
+    font-size: $font-sm;
+    color: $color-muted;
+  }
+}
